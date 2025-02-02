@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Proxy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+    <div class="container">
+        <h1>GitHub Proxy</h1>
+        <p>支持 GitHub 文件加速访问</p>
+        <p class="disclaimer">节点均来自网络，部分节点可能失效</p>
+        
+        <div class="input-section">
+            <input type="text" id="githubLink" placeholder="粘贴 GitHub 文件链接">
+            <select id="nodeSelector">
+                <option value="">选择节点</option>
+                <option value="https://gh.llkk.cc">gh.llkk.cc</option>
+                <option value="https://github.moeyy.xyz">github.moeyy.xyz</option>
+                <option value="https://ghproxy.cn">ghproxy.cn</option>
+                <option value="https://ghproxy.net">ghproxy.net</option>
+                <option value="https://gitproxy.click">gitproxy.click</option>
+                <option value="https://github.tbedu.top">github.tbedu.top</option>
+            </select>
+            <button onclick="downloadFile()">开始下载</button>
+        </div>
+
+        <div class="node-list">
+            <h2>可用节点</h2>
+            <div class="node-item">
+                <span class="node-name">节点名称</span>
+                <span class="node-url">节点 URL</span>
+                <span class="status">延迟</span>
+                <span class="recommendation">推荐指数</span>
+            </div>
+            <div id="nodeStatusList"></div>
+            <p class="disclaimer">推荐指数仅为对网站的分析，不代表实际下载情况。</p>
+        </div>
+
+        <div class="controls">
+            <button onclick="detectNodeLatency()">检测节点延迟</button>
+            <button onclick="toggleTheme()">切换主题</button>
+            <button onclick="backupNodes()">备份节点</button>
+            <button onclick="restoreNodes()">恢复节点</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

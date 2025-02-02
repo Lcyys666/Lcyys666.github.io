@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+h1 {
+    text-align: center;
+    transition: color 0.3s;
+}
+
+p {
+    text-align: center;
+    transition: color 0.3s;
+}
+
+.disclaimer {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.input-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+select {
+    padding: 10px;
+    margin: 10px 0;
+    width: 25%;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.node-list {
+    margin-top: 20px;
+}
+
+.node-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.node-name {
+    flex: 1;
+}
+
+.node-url {
+    flex: 2;
+    text-align: right;
+}
+
+.status {
+    flex: 1;
+    text-align: center;
+}
+
+.recommendation {
+    flex: 1;
+    text-align: center;
+}
+
+.controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* 浅色主题 */
+.light-theme {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.light-theme .container {
+    background-color: #f5f5f5;
+}
+
+.light-theme input[type="text"],
+.light-theme select,
+.light-theme button {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+.light-theme .node-item {
+    background-color: #f9f9f9;
+}
+
+/* 深色主题 */
+.dark-theme {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.dark-theme .container {
+    background-color: #2d2d2d;
+}
+
+.dark-theme input[type="text"],
+.dark-theme select,
+.dark-theme button {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.dark-theme .node-item {
+    background-color: #444444;
+}

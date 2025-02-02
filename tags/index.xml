@@ -2,41 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on 代号peter123-Lcy666</title>
-        <link>https://lcyys666.github.io/tags/</link>
+        <link>http://localhost:1313/tags/</link>
         <description>Recent content in Tags on 代号peter123-Lcy666</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>代号peter123-Lcy666</copyright>
-        <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://lcyys666.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Css</title>
-        <link>https://lcyys666.github.io/tags/css/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>GitHub</title>
+        <link>http://localhost:1313/tags/github/</link>
+        <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://lcyys666.github.io/tags/css/</guid>
+        <guid>http://localhost:1313/tags/github/</guid>
         <description></description>
         </item>
         <item>
-        <title>Html</title>
-        <link>https://lcyys666.github.io/tags/html/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        <title>加速</title>
+        <link>http://localhost:1313/tags/%E5%8A%A0%E9%80%9F/</link>
+        <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://lcyys666.github.io/tags/html/</guid>
+        <guid>http://localhost:1313/tags/%E5%8A%A0%E9%80%9F/</guid>
         <description></description>
         </item>
         <item>
-        <title>Markdown</title>
-        <link>https://lcyys666.github.io/tags/markdown/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        <title>教程</title>
+        <link>http://localhost:1313/tags/%E6%95%99%E7%A8%8B/</link>
+        <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://lcyys666.github.io/tags/markdown/</guid>
+        <guid>http://localhost:1313/tags/%E6%95%99%E7%A8%8B/</guid>
         <description></description>
         </item>
         <item>
-        <title>Themes</title>
-        <link>https://lcyys666.github.io/tags/themes/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        <title>安卓</title>
+        <link>http://localhost:1313/tags/%E5%AE%89%E5%8D%93/</link>
+        <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://lcyys666.github.io/tags/themes/</guid>
+        <guid>http://localhost:1313/tags/%E5%AE%89%E5%8D%93/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>电脑</title>
+        <link>http://localhost:1313/tags/%E7%94%B5%E8%84%91/</link>
+        <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/%E7%94%B5%E8%84%91/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>原神</title>
+        <link>http://localhost:1313/tags/%E5%8E%9F%E7%A5%9E/</link>
+        <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/%E5%8E%9F%E7%A5%9E/</guid>
         <description></description>
         </item>
         
