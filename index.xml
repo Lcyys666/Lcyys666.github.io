@@ -3,11 +3,11 @@
     <channel>
         <title>代号peter123-Lcy666</title>
         <link>http://localhost:1313/</link>
-        <description>Recent content on 代号peter123-Lcy666 的博客，专注于游戏、教程、技术分享和生活记录。欢迎查看</description>
+        <description>Recent content on 代号peter123-Lcy666</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>代号peter123-Lcy666</copyright>
-        <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://lcyys666.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 01 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>GitHub加速下载</title>
         <link>http://localhost:1313/p/github-acceleration/</link>
         <pubDate>Sat, 01 Feb 2025 00:00:00 +0000</pubDate>
@@ -33,12 +33,12 @@
 </description>
         </item>
         <item>
-        <title>原神私服pc教程</title>
+        <title>pc教程</title>
         <link>http://localhost:1313/p/yuanshen-pc/</link>
         <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/p/yuanshen-pc/</guid>
-        <description>&lt;img src="http://localhost:1313/p/yuanshen-pc/yuanshenqd.png" alt="Featured image of post 原神私服pc教程" /&gt;&lt;h2 id=&#34;grasscutter版&#34;&gt;Grasscutter版
+        <description>&lt;img src="http://localhost:1313/p/yuanshen-pc/yuanshenqd.png" alt="Featured image of post pc教程" /&gt;&lt;h2 id=&#34;grasscutter版&#34;&gt;Grasscutter版
 &lt;/h2&gt;&lt;h3 id=&#34;开启服务端&#34;&gt;开启服务端
 &lt;/h3&gt;&lt;p&gt;打开Lcy服务端直到调度服务器启动于127.0.0.1:21000，游戏服务器启动于127.0.0.1:22102
 &lt;img src=&#34;http://localhost:1313/p/yuanshen-pc/%E5%90%AF%E5%8A%A8%E6%88%90%E5%8A%9F.png&#34;
@@ -149,12 +149,12 @@ yuuki服在群文件中！！！&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>原神私服安卓教程</title>
+        <title>安卓教程</title>
         <link>http://localhost:1313/p/yuanshen-az/</link>
         <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/p/yuanshen-az/</guid>
-        <description>&lt;img src="http://localhost:1313/p/yuanshen-az/yuanshenqd.png" alt="Featured image of post 原神私服安卓教程" /&gt;&lt;h2 id=&#34;grasscutter版&#34;&gt;Grasscutter版
+        <description>&lt;img src="http://localhost:1313/p/yuanshen-az/yuanshenqd.png" alt="Featured image of post 安卓教程" /&gt;&lt;h2 id=&#34;grasscutter版&#34;&gt;Grasscutter版
 &lt;/h2&gt;&lt;h3 id=&#34;准备客户端&#34;&gt;准备客户端
 &lt;/h3&gt;&lt;p&gt;迁移官服游戏数据到私服，负责加载卡45%&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/yuanshen-az/%E8%BF%81%E7%A7%BB%E6%B8%B8%E6%88%8F%E6%95%B0%E6%8D%AE.png&#34;
