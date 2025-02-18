@@ -834,7 +834,7 @@
 
         // GitHub OAuth 设置
         const GITHUB_CLIENT_ID = 'Ov23ctezOnSrzhY1vmsR'; // 替换为你的 GitHub OAuth 客户端ID
-        const GITHUB_REDIRECT_URI = 'https://ghproxy.cloud/auth/callback'; // 替换为你的回调地址
+        const GITHUB_REDIRECT_URI = 'https://proxy.ghproxy.cloud/'; // 替换为你的回调地址
         const GITHUB_AUTH_URL = `https://github.com/login/oauth/authorize?client_id=${GITHUB_CLIENT_ID}&redirect_uri=${encodeURIComponent(GITHUB_REDIRECT_URI)}&scope=user:email`;
 
         function loginWithGithub() {
