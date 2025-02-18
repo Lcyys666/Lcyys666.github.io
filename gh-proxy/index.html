@@ -107,6 +107,37 @@
             color: #ffffff;
         }
 
+        /* 新增登录/注册样式 */
+        .auth {
+            display: flex;
+            gap: 10px;
+            margin-left: 20px;
+        }
+
+        .auth-btn {
+            background: #6c757d;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .dark .auth-btn {
+            background: #ffffff;
+            color: #000000;
+        }
+
+        .dark .auth-btn:hover {
+            background: #f0f0f0;
+            color: #6c757d;
+        }
+
+        .auth-btn:hover {
+            opacity: 0.8;
+        }
+
         /* 弹出界面样式 */
         .popup {
             display: none;
@@ -462,6 +493,81 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        /* 新增登录/注册按钮样式 */
+        .auth {
+            display: flex;
+            gap: 20px;
+        }
+
+        .auth-btn {
+            background: #6c757d;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+
+        .dark .auth-btn {
+            background: #ffffff;
+            color: #000000;
+        }
+
+        .dark .auth-btn:hover {
+            background: #f0f0f0;
+            color: #6c757d;
+        }
+
+        .auth-btn:hover {
+            opacity: 0.8;
+        }
+
+        /* 登录弹窗样式 */
+        .auth-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1001;
+            width: 400px;
+            max-width: 90%;
+        }
+
+        .dark .auth-popup {
+            background-color: #2a2a2a;
+            color: #ffffff;
+        }
+
+        .auth-popup .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            color: #6c757d;
+            font-size: 18px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .auth-popup .close-btn:hover {
+            color: #343a40;
+        }
+
+        .dark .auth-popup .close-btn {
+            color: #999999;
+        }
+
+        .dark .auth-popup .close-btn:hover {
+            color: #ffffff;
+        }
     </style>
 </head>
 <body class="flex">
@@ -484,6 +590,11 @@
             </div>
             <div class="announcement">
                 <button onclick="showPopup()">本站最新地址发布站</button>
+            </div>
+            <!-- 新增登录/注册按钮 -->
+            <div class="auth">
+                <button onclick="loginWithGithub()" class="auth-btn">登录</button>
+                <button onclick="openRegisterPopup()" class="auth-btn">注册</button>
             </div>
         </div>
     </nav>
@@ -720,6 +831,48 @@
             document.getElementById('git-clone-cmd').textContent = `git clone ${window.location.origin}/${defaultUrl}`;
             document.getElementById('direct-download-cmd').textContent = `${window.location.origin}/${defaultUrl}`;
         });
+
+        // GitHub OAuth 设置
+        const GITHUB_CLIENT_ID = 'Ov23ctezOnSrzhY1vmsR'; // 替换为你的 GitHub OAuth 客户端ID
+        const GITHUB_REDIRECT_URI = 'https://ghproxy.cloud/auth/callback'; // 替换为你的回调地址
+        const GITHUB_AUTH_URL = `https://github.com/login/oauth/authorize?client_id=${GITHUB_CLIENT_ID}&redirect_uri=${encodeURIComponent(GITHUB_REDIRECT_URI)}&scope=user:email`;
+
+        function loginWithGithub() {
+            // 引导用户到 GitHub 授权页面
+            window.location.href = GITHUB_AUTH_URL;
+        }
+
+        // 处理 GitHub 登录回调
+        if (window.location.pathname === '/auth/callback') {
+            const urlParams = new URLSearchParams(window.location.search);
+            const code = urlParams.get('code');
+            
+            if (code) {
+                // 通过 Cloudflare Worker 处理回调
+                fetch(`/api/auth/github/callback?code=${code}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            alert('登录成功！');
+                            // 将用户信息存储到 localStorage 或其他存储
+                            localStorage.setItem('user', JSON.stringify(data.user));
+                            // 刷新页面
+                            window.location.href = '/';
+                        } else {
+                            alert('登录失败，请稍后再试');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('登录失败，请稍后再试');
+                    });
+            }
+        }
+
+        // 打开注册弹窗（占位代码）
+        function openRegisterPopup() {
+            alert('注册功能暂未实现，敬请期待！');
+        }
     </script>
 </body>
 </html>
